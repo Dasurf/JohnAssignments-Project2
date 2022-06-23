@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    font-family: Lucida, sans-serif;
+}
+
+:root {
+    --lightgray: rgb(153, 149, 149);
+    --darkgray: rgb(84, 84, 84);
+}
+
+header {
+    display: flex;
+    height: auto;
+    justify-content:center;
+    align-items: center; 
+    flex-flow: column nowrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--darkgray);
+    line-height: 0;
+}
+
+header p {
+    width: 420px;
+    line-height: 20px;
+    word-wrap: break-word;
+    text-align: center;
+    color: var(--lightgray)
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectboxes {
+    width: 300px;
+    height: 180px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.rectboxes p, h4 {
+    margin-left: 15px;
+}
+
+.rectboxes p {
+    color: var(--lightgray);
+}
+
+.firstbox {
+    box-shadow: -5px 7px 18px rgb(206, 206, 210);
+    border-top: 3px solid rgb(25, 231, 210);
+}
+
+.secondbox {
+    box-shadow: 0 7px 18px rgb(206, 206, 210);
+    border-top: 3px solid rgb(143, 0, 0);
+}
+
+.thirdbox {
+    box-shadow: 0 7px 18px rgb(206, 206, 210);
+    border-top: 3px solid rgb(220, 174, 49);
+    margin-top: 20px;
+}
+
+.fourthbox {
+    box-shadow: 5px 7px 18px rgb(206, 206, 210);
+    border-top: 3px solid rgb(11, 108, 193);
+}
+
+
+@media screen and (max-width: 1050px) {
+    main {
+        flex-flow: column;
+    }
+}
